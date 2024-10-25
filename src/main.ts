@@ -3,6 +3,8 @@ import { Descuento } from "./caso2";
 import { DesayunoParticular, DesayunoTourOperador } from "./ejercicioAdicional";
 import { reservas } from "./reservas";
 
+//Caso 1
+
 const precioHabitacion = new PrecioTotal(reservas);
 
 console.log(
@@ -11,6 +13,8 @@ console.log(
 );
 
 console.log("Total con iva: ", precioHabitacion.calcularTotal().toFixed(2));
+
+//Caso 2
 
 const precioConDescuento = new Descuento(reservas, 15);
 
@@ -22,6 +26,8 @@ console.log(
   "Total de tour operador: ",
   precioConDescuento.calcularTotalDescuento().toFixed(2)
 );
+
+//Ejercicio Adicional
 
 const precioConDesayunoParticular = new DesayunoParticular(reservas);
 
